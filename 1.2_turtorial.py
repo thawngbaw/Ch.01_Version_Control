@@ -8,28 +8,51 @@ Turtle Documentation: https://docs.python.org/3.3/library/turtle.html?highlight=
 
 '''
 import turtle
-yoda=turtle.Turtle()
+ham=turtle.Turtle()
 screen=turtle.Screen() # makes a screen object
 screen.bgcolor('black') # colors the screen
-yoda.pensize(3) # width of pen line
-yoda.speed(10)  # speed of drawing. Go fast to not waste time.
-yoda.color("#00FF00")
-yoda.circle(100)  #head
-yoda.penup()
-yoda.setpos(50,185) #right ear
-yoda.pendown()
-yoda.goto(200,210)
-yoda.goto(88,145)
-yoda.penup()
-yoda.setpos(-50,185)  #left ear
-yoda.pendown()
-yoda.goto(-200,210)
-yoda.goto(-88,145)
-yoda.penup()
-yoda.setpos(200,-300)
-yoda.pendown()
-yoda.pencolor('#00FF00')
+ham.pensize(3) # width of pen line
+ham.speed(0)  # speed of drawing. Go fast to not waste time.
+ham.color("#00FF00")
+#ham.circle(50)  #head
+ham.penup()
+ham.goto(-40,-60)
+ham.pendown()
+#ham.circle(50)
+ham.penup()
+#ham.pendown()
+#ham.goto(40,-80)
+#ham.penup()
+#ham.pendown()
+#ham.goto(-200,210)
+ham.goto(-88,145)
+ham.penup()
+#ham.setpos(200,-300)
+for i in range(36):
+    ham.pendown()
+    ham.forward(50)
+    ham.right(90)
+    ham.circle(50)
+    ham.forward(60)
+    ham.right(100)
+ham.penup()
+ham.goto(-100,-60)
+for i in range(3):
+    ham.pendown()
+    ham.forward(30)
+    ham.right(90)
+    ham.forward(30)
+    ham.right(90)
+    for i in range(8):
+        ham.begin_fill()
+        ham.circle(25)
+        ham.forward(20)
+
+ham.penup()
+ham.goto(-190,-85)
+ham.pendown()
+ham.pencolor('blue')
 
 
-yoda.write('Sign Your Name Here',font=("Arial", 16, "normal")) # signs your name to your art
+ham.write('Bawi Thawng',font=("Arial", 16, "normal")) # signs your name to your art
 turtle.exitonclick() #Keeps pycharm window open so we can see the drawing
