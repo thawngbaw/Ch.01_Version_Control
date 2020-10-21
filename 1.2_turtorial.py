@@ -25,7 +25,7 @@ ham.penup()
 #ham.penup()
 #ham.pendown()
 #ham.goto(-200,210)
-ham.goto(-88,145)
+ham.goto(-88, 145)
 ham.penup()
 #ham.setpos(200,-300)
 for i in range(36):
